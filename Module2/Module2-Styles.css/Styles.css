@@ -13,6 +13,22 @@ p {
     height: 90px;
     float: left;
     margin-right: 15px;
-    
-    
+}
+.row {
+    width: 100%;
+}
+@media (min-width: 1200px) {
+    .scal-lg-3, .snadiv-lg-3, .chic-lg-3
+    {
+        float: left;
+    }
+}
+.scal-lg-3 {
+    width: 40%;
+}
+.snap-lg-3 {
+    width: 40%;
+}
+.chic-lg-3 {
+    width: 40%;
 }
