@@ -1,61 +1,141 @@
-<style>
-  /* Basic styles */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
   }
+  body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+   }
+
+   
   h1 {
     text-align: center;
-    margin: 20px 0;
+    margin: 20px;
+    font-size: 175%;
+
   }
+  
+  p {
+    padding: 5px;
+    text-align: left;
+    margin-top: 45px;
+    text-indent: 30px;
+  }
+
+
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-  }
-  .section {
-    border: 1px solid #ccc;
-    padding: 20px;
     position: relative;
+    padding: 5;
+    max-height: 100%;
+    max-width: 100%
+
+    
   }
-  .section h2 {
+  .section1, .section2, .section3 {
+    border: solid rgb(8, 8, 8);
+    position: relative;
+    height: 180px;
+    background-color: gray;
+    border-radius: 10px;
+    
+
+  }
+  .section1, .section2 {
+    display: flex;
+
+} 
+
+  #sca {
+    background-color: rgb(131, 74, 74);
+    color: white;
+  }
+
+  #shr {
+    background-color: rgba(239, 211, 135, 0.971);
+  }  
+
+  #lob {
+    background-color: rgba(81, 124, 118, 0.971);
+    color: white;
+  }
+  h2 {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1rem;
-    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    top: -3;
+    right: -3;
+    width: 48%;
+    height: 25%;
+    font-size: 125%;
+    border: solid rgb(6, 6, 6);
+    box-sizing: border-box;
   }
+
+  a:hover, a:active {
+    background-color: red;
+    color: yellow; 
+    cursor: pointer;
+}
+
   
   /* Desktop view - 992px and above */
   @media (min-width: 992px) {
     .container {
       justify-content: space-between;
+      display: flex;
     }
-    .section {
-      flex: 1;
-      min-width: calc(33.33% - 20px);
+    .section1, .section2, .section3 {
+      width: 32.3%;
+      overflow: scroll; 
+      
     }
+ 
   }
   
   /* Tablet view - between 768px and 991px */
   @media (min-width: 768px) and (max-width: 991px) {
-    .section:nth-child(1), .section:nth-child(2) {
-      flex: 1;
-      min-width: calc(50% - 20px);
+    .container {
+        display: inline-block;
+        grid-auto-flow: row;
     }
-    .section:nth-child(3) {
-      flex: 100%;
-      min-width: 100%;
+   
+    .section1, .section2, .section3 {
+      width: 49%;
+      overflow: scroll;
+      margin-bottom: 15px;
+    
+    }
+
+    .section1 {
+      float: left;  
+    }
+
+    .section2 {
+       float: right;
+    }
+    .section1, .section2 {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .section3 {
+      width: 100%;
+      overflow: scroll;
+      
     }
   }
   
   /* Mobile view - 767px and below */
   @media (max-width: 767px) {
-    .section {
+    .section1, .section2, .section3 {
       flex: 100%;
       min-width: 100%;
+      overflow: scroll;
+      margin-bottom: 15px;
+
+      
+
     }
   }
-</style>
