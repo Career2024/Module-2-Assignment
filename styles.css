@@ -1,26 +1,35 @@
-
+* {
+    box-sizing: border-box;
+  }
   body {
     font-family: 'Times New Roman', Times, serif;
     background-color:white;
     margin: 0;
    }
-  header {
-    text-align: center;
-    font-size: 1.2em;
-    color: white;
 
+  header {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 
   } 
    
+   
   h1 {
-    text-align: center;
-    padding-top: 30px;
+    justify-content: center;
+    font-size: 180%;
+    padding-top: 40px;
     padding-right: 0px;
     padding-bottom: 30px;
     padding-left: 0px;
-    background-color: rgba(14, 36, 56, 0.971);
-    
-    
+    font-weight: bold;
+    background-color: rgba(12, 29, 42, 0.971);
+    max-width: 100vw;
+    box-sizing: content-box;
+    height: 60px;
+    color: white;
+   
 
   }
   
@@ -37,7 +46,8 @@
     position: relative;
     padding: 5;
     max-height: 100%;
-    max-width: 100%
+    max-width: 100%;
+    margin: 10px;
 
     
   }
@@ -45,10 +55,10 @@
     border: solid rgb(8, 8, 8);
     position: relative;
     height: 180px;
-    background-color: rgb(255, 251, 251);
+    background-color: rgb(255, 239, 239);
     border-radius: 10px;
     border: 1px solid black;
-    margin-right: 5px;
+    
     
 
   }
@@ -59,22 +69,16 @@
 
   #sca {
     background-color: rgb(131, 74, 74);
-    color: black;
-    border: 1px solid black;
-
+    color: white;
   }
 
   #shr {
     background-color: rgba(239, 211, 135, 0.971);
-    border: 1px solid black;
-
   }  
 
   #lob {
     background-color: rgba(81, 124, 118, 0.971);
     color: white;
-    border: 1px solid black;
-
   }
 
   h2 {
@@ -89,6 +93,9 @@
     width: 48%;
     height: 25%;
     font-size: 125%;
+    border: solid rgb(6, 6, 6);
+    border: 1px solid black;
+    
   }
 
  
