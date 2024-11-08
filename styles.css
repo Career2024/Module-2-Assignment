@@ -1,18 +1,29 @@
-* {
-    box-sizing: border-box;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    background-color:white;
-   }
 
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:white;
+    margin: 0;
+   }
+  header {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+
+
+  } 
    
   h1 {
     text-align: center;
-    margin: 20px;
-    font-size: 175%;
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    background-color: rgba(14, 36, 56, 0.971);
+    
+    
 
   }
+  
   
   p {
     padding: 5px;
@@ -34,8 +45,10 @@
     border: solid rgb(8, 8, 8);
     position: relative;
     height: 180px;
-    background-color: gray;
+    background-color: rgb(255, 251, 251);
     border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
     
 
   }
@@ -46,17 +59,24 @@
 
   #sca {
     background-color: rgb(131, 74, 74);
-    color: white;
+    color: black;
+    border: 1px solid black;
+
   }
 
   #shr {
     background-color: rgba(239, 211, 135, 0.971);
+    border: 1px solid black;
+
   }  
 
   #lob {
     background-color: rgba(81, 124, 118, 0.971);
     color: white;
+    border: 1px solid black;
+
   }
+
   h2 {
     position: absolute;
     text-align: center;
@@ -69,15 +89,9 @@
     width: 48%;
     height: 25%;
     font-size: 125%;
-    border: solid rgb(6, 6, 6);
-    box-sizing: border-box;
   }
 
-  a:hover, a:active {
-    background-color: red;
-    color: yellow; 
-    cursor: pointer;
-}
+ 
 
   
   /* Desktop view - 992px and above */
